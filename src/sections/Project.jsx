@@ -74,7 +74,7 @@ const Project = () => {
       className="relative min-h-screen flex flex-col justify-center items-center bg-[#242424] text-white pt-24 px-6 md:flex-col md:gap-12"
     >
       {/* Heading */}
-      <div className="absolute top-24 right-6 md:right-20 text-right">
+      <div data-aos="fade-left" className="absolute top-24 right-6 md:right-20 text-right">
         <div className="flex items-center gap-3 justify-end mb-1">
           <div className="flex-1 border-t-4 rounded-sm border-[#777777]"></div>
           <h2 className="text-3xl font-extrabold text-[#777777]">Recent</h2>
@@ -83,7 +83,7 @@ const Project = () => {
       </div>
 
       {/* Tombol kiri atas */}
-      <div className="absolute top-28 left-6 md:left-20">
+      <div data-aos="fade-right" className="absolute top-28 left-6 md:left-20">
         <button
           ref={buttonRef}
           onClick={handleOpenModal}
@@ -98,6 +98,8 @@ const Project = () => {
 
       {/* Portfolio Cards */}
       <div
+        data-aos="zoom-in"
+        data-aos-duration="1500" 
         ref={cardsRef}
         className={`grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center w-full max-w-7xl mx-auto md:mt-16 mt-30 px-4 ${
           isCardsVisible ? 'animate__animated animate__fadeIn' : ''

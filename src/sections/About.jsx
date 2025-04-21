@@ -7,7 +7,7 @@ const About = () => {
       className="min-h-screen flex flex-col items-center bg-[#242424] text-white pt-24 px-6 md:flex-row md:justify-center gap-0 md:gap-12"
     >
       {/* Heading */}
-      <div className="absolute top-17 left-6 md:top-28 md:left-20">
+      <div data-aos="fade-right" className="absolute top-17 left-6 md:top-28 md:left-20">
         <div className="flex items-center gap-3 mb-1">
           <h2 className="text-3xl font-extrabold text-[#777777]">About</h2>
           <div className="flex-1 border-t-4 rounded-sm border-[#777777]"></div>
@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       {/* Gambar */}
-      <div className="order-1 md:order-1 mb-8 mt-10 md:mb-0 md:mt-0">
+      <div data-aos="zoom-in" data-aos-duration="1000" className="order-1 md:order-1 mb-8 mt-10 md:mb-0 md:mt-0">
         <img
           src="/danu.png"
           alt="pp"
@@ -25,7 +25,7 @@ const About = () => {
       </div>
 
       {/* Text content */}
-      <div className="order-2 md:order-2 text-center md:text-left max-w-xl mb-8 md:mb-0">
+      <div data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500" className="order-2 md:order-2 text-center md:text-left max-w-xl mb-8 md:mb-0">
         <p className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
           Hallo I’m <br /> Mohammad Laily Nova Krisna
         </p>

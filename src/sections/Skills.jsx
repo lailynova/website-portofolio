@@ -40,7 +40,7 @@ const Skills = () => {
     <section id="skills" className="relative  bg-[#242424] text-white py-12 px-6 flex flex-row justify-center items-center">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <div className="absolute top-30 left-6 md:top-28 md:left-20">
+        <div data-aos="fade-right" className="absolute top-30 left-6 md:top-28 md:left-20">
             <div className="flex items-center gap-3 mb-1">
             <h2 className="text-3xl font-extrabold text-[#777777]">My</h2>
             <div className="flex-1 border-t-4 rounded-sm border-[#777777]"></div>
@@ -49,7 +49,7 @@ const Skills = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-4 mb-10 mt-50">
+        <div data-aos="fade-in" className="flex gap-4 mb-10 mt-50">
           <button
             className={`px-4 py-2 rounded-md ${
               activeTab === 'tech' ? 'bg-[#404040]' : ''
@@ -69,7 +69,7 @@ const Skills = () => {
         </div>
 
         {/* Grid Items */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
         {(activeTab === 'tech' ? skills : toolSkills).map((skill, index) => (
           <div
             key={index}
