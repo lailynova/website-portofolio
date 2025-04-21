@@ -85,7 +85,7 @@ function Navbar() {
           </ul>
           {/* Mobile Only: GitHub + Hamburger */}
           <div className="flex items-center space-x-4 md:hidden">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/lailynova" target="_blank" rel="noopener noreferrer">
               <FaGithub size={30} className="text-white hover:text-gray-400" />
             </a>
             <button
@@ -111,7 +111,7 @@ function Navbar() {
 
           {/* Desktop Only GitHub Icon */}
           <a
-            href="https://github.com"
+            href="https://github.com/lailynova"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block"
