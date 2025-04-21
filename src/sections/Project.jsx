@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import ProjectCard from './ProjectCard'; // pastikan path-nya benar
+import ProjectCard from './ProjectCard';
+
+// Helper untuk memastikan path gambar benar di GitHub Pages
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 
 const Project = () => {
   const portfolioItems = [
     {
       title: 'Website BEM',
       description: 'Website Profile Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer',
-      image: '/project3.png',
+      image: withBase('/project3.png'),
       tags: ['React', 'Tailwind'],
       detailsLink: 'https://www.google.com',
       previewLink: 'https://www.google.com',
     },
     {
       title: 'Laporan Perkembangan Siswa',
-      description: 'Sebuah sistem yang menjembantani antara guru dan murid untuk mendapatkan akses perkembangan siswa setiap bulannya',
-      image: '/project2.png',
+      description: 'Sebuah sistem yang menjembatani antara guru dan murid untuk mendapatkan akses perkembangan siswa setiap bulannya',
+      image: withBase('/project2.png'),
       tags: ['React.js', 'Tailwind', 'Firebase'],
       detailsLink: 'https://www.google.com',
       previewLink: 'https://www.google.com',
@@ -23,7 +26,7 @@ const Project = () => {
     {
       title: 'Website Profile',
       description: 'Website profil perusahaan Barincore.Id',
-      image: '/project1.png',
+      image: withBase('/project1.png'),
       tags: ['React.js', 'Tailwind'],
       detailsLink: 'https://www.google.com',
       previewLink: 'https://www.google.com',
@@ -99,13 +102,12 @@ const Project = () => {
       {/* Portfolio Cards */}
       <div
         data-aos="zoom-in"
-        data-aos-duration="1500" 
+        data-aos-duration="1500"
         ref={cardsRef}
         className={`grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center w-full max-w-7xl mx-auto md:mt-16 mt-30 px-4 ${
           isCardsVisible ? 'animate__animated animate__fadeIn' : ''
         }`}
       >
-
         {initialItems.map((item, index) => (
           <ProjectCard key={index} {...item} />
         ))}

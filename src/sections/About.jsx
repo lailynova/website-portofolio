@@ -18,7 +18,7 @@ const About = () => {
       {/* Gambar */}
       <div data-aos="zoom-in" data-aos-duration="1000" className="order-1 md:order-1 mb-8 mt-10 md:mb-0 md:mt-0">
         <img
-          src="/danu.png"
+          src={`${import.meta.env.BASE_URL}danu.png`}
           alt="pp"
           className="w-60 h-60 md:w-[28rem] md:h-[28rem] rounded-full object-cover hover:-translate-y-2 transition-transform duration-300"
         />
