@@ -51,7 +51,7 @@ const Skills = () => {
         </div>
 
         {/* Tabs */}
-        <div data-aos="fade-in" className="flex gap-4 mb-10 mt-50">
+        <div data-aos="fade-in" className="flex gap-4 mb-10 mt-45">
           <button
             className={`px-4 py-2 rounded-md ${activeTab === 'tech' ? 'bg-[#404040]' : ''}`}
             onClick={() => setActiveTab('tech')}
